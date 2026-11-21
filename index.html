@@ -37,37 +37,27 @@
 <defs><linearGradient id="skinA" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#efbb98"/><stop offset="1" stop-color="#d9926f"/></linearGradient><linearGradient id="skinB" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c17a58"/><stop offset="1" stop-color="#985136"/></linearGradient><linearGradient id="road" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#767d85"/><stop offset="1" stop-color="#454b53"/></linearGradient></defs>
 <!-- soft moving route accents -->
 <path d="M0 270H1000" stroke="#e8eaed" stroke-width="2" stroke-dasharray="4 14"/>
-<!-- illustrated handshake: two arms, visible palms, thumbs and fingers -->
-<g class="hand-left">
-  <path d="M-25 322 C78 295 190 294 292 311 L412 337 L451 372 L416 416 C377 407 339 399 299 394 L-25 410Z" fill="url(#skinA)"/>
-  <path d="M-5 332 C105 308 205 310 300 328" fill="none" stroke="#f7d2ba" stroke-width="7" stroke-linecap="round" opacity=".6"/>
-  <path d="M390 337 C415 331 439 339 458 354 L495 382 C507 392 507 406 497 414 C488 422 475 418 464 410 L424 384 C409 375 397 361 390 337Z" fill="#e6a17e" stroke="#bd795b" stroke-width="2"/>
-  <!-- curled fingers of the left hand -->
-  <path d="M434 366 C456 373 475 387 490 402" fill="none" stroke="#f5c2a4" stroke-width="13" stroke-linecap="round"/>
-  <path d="M421 380 C444 391 460 405 474 416" fill="none" stroke="#d98f6d" stroke-width="11" stroke-linecap="round"/>
-  <path d="M407 390 C426 403 441 414 453 422" fill="none" stroke="#cf8665" stroke-width="9" stroke-linecap="round"/>
-  <path d="M396 343 C405 326 423 318 441 324 C457 329 469 343 480 355 L500 375 C508 383 506 394 498 400 C490 406 480 401 472 394 L440 368 C428 358 413 355 396 359Z" fill="#efb18e" stroke="#bd795b" stroke-width="2"/>
+<!-- clean route information panels: no hand illustration -->
+<g class="route-panels">
+  <rect x="54" y="316" width="390" height="112" rx="16" fill="#fff" stroke="#e5e8eb" stroke-width="2"/>
+  <rect x="54" y="316" width="8" height="112" rx="4" fill="#d83232"/>
+  <circle cx="96" cy="356" r="17" fill="#fff0ed" stroke="#d83232" stroke-width="2"/>
+  <path d="M96 345 C89 345 85 351 85 357 C85 365 96 376 96 376 C96 376 107 365 107 357 C107 351 103 345 96 345Z" fill="#d83232"/>
+  <circle cx="96" cy="356" r="4" fill="#fff"/>
+  <text x="126" y="354" font-family="Manrope,Arial" font-size="17" font-weight="800" letter-spacing="2" fill="#d83232">SOURCE</text>
+  <text x="126" y="384" font-family="Manrope,Arial" font-size="13" font-weight="600" fill="#69727c">Pickup location</text>
+  <path d="M126 403H405" stroke="#d7dce1" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+  <rect x="556" y="316" width="390" height="112" rx="16" fill="#fff" stroke="#e5e8eb" stroke-width="2"/>
+  <rect x="938" y="316" width="8" height="112" rx="4" fill="#d83232"/>
+  <circle cx="598" cy="356" r="17" fill="#fff0ed" stroke="#d83232" stroke-width="2"/>
+  <path d="M598 345 C591 345 587 351 587 357 C587 365 598 376 598 376 C598 376 609 365 609 357 C609 351 605 345 598 345Z" fill="#d83232"/>
+  <circle cx="598" cy="356" r="4" fill="#fff"/>
+  <text x="628" y="354" font-family="Manrope,Arial" font-size="17" font-weight="800" letter-spacing="2" fill="#d83232">DESTINATION</text>
+  <text x="628" y="384" font-family="Manrope,Arial" font-size="13" font-weight="600" fill="#69727c">Delivery location</text>
+  <path d="M628 403H907" stroke="#d7dce1" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 5"/>
+  <path d="M455 372H545" stroke="#d83232" stroke-width="3" stroke-dasharray="6 7" stroke-linecap="round"/>
+  <circle cx="500" cy="372" r="7" fill="#d83232"/>
 </g>
-<g class="hand-right">
-  <path d="M1025 322 C922 295 810 294 708 311 L588 337 L549 372 L584 416 C623 407 661 399 701 394 L1025 410Z" fill="url(#skinB)"/>
-  <path d="M1005 332 C895 308 795 310 700 328" fill="none" stroke="#d69a7d" stroke-width="7" stroke-linecap="round" opacity=".5"/>
-  <path d="M610 337 C585 331 561 339 542 354 L505 382 C493 392 493 406 503 414 C512 422 525 418 536 410 L576 384 C591 375 603 361 610 337Z" fill="#a96143" stroke="#82452f" stroke-width="2"/>
-  <!-- fingers and thumb clearly wrapping over the clasp -->
-  <path d="M566 359 C544 368 526 382 510 397" fill="none" stroke="#d18a68" stroke-width="13" stroke-linecap="round"/>
-  <path d="M579 374 C556 387 540 402 526 416" fill="none" stroke="#b97150" stroke-width="11" stroke-linecap="round"/>
-  <path d="M594 385 C575 399 559 411 547 422" fill="none" stroke="#ad6547" stroke-width="9" stroke-linecap="round"/>
-  <path d="M604 343 C595 326 577 318 559 324 C543 329 531 343 520 355 L500 375 C492 383 494 394 502 400 C510 406 520 401 528 394 L560 368 C572 358 587 355 604 359Z" fill="#c17a58" stroke="#82452f" stroke-width="2"/>
-</g>
-<g class="handshake-core">
-  <!-- joined palms and interlocking thumbs -->
-  <path d="M432 348 C448 333 467 334 484 347 L516 373 C531 385 535 399 526 410 C517 421 502 417 490 408 L454 383 C439 373 430 361 432 348Z" fill="#e8a17e" stroke="#b9785a" stroke-width="2"/>
-  <path d="M568 348 C552 333 533 334 516 347 L484 373 C469 385 465 399 474 410 C483 421 498 417 510 408 L546 383 C561 373 570 361 568 348Z" fill="#ad684b" stroke="#82452f" stroke-width="2"/>
-  <path d="M455 350 C476 354 493 368 511 384 C520 392 530 400 541 404" fill="none" stroke="#f4c3a4" stroke-width="10" stroke-linecap="round"/>
-  <path d="M545 350 C524 354 507 368 489 384 C480 392 470 400 459 404" fill="none" stroke="#d08b69" stroke-width="10" stroke-linecap="round"/>
-  <path d="M474 382 C490 390 503 401 515 412" fill="none" stroke="#96563e" stroke-width="3" stroke-linecap="round" opacity=".55"/>
-</g>
-<!-- source and destination labels -->
-<text x="42" y="448" class="source-label">SOURCE</text><text x="958" y="448" text-anchor="end" class="destination-label">DESTINATION</text>
 <!-- bridge in foreground -->
 <g class="road">
 <path d="M0 217H1000V278H0Z" fill="url(#road)"/>
@@ -95,7 +85,7 @@
 </g>
 </g>
 </svg></div>
-<div class="scene-note">Source · Safe Transit · Destination</div>
+<div class="scene-note">SOURCE · PICKUP LOCATION &nbsp;&nbsp; • &nbsp;&nbsp; DESTINATION · DELIVERY LOCATION</div>
 <div class="cta-row"><a class="btn btn-red" href="tel:+917223981175">☎ Call Ajay Arora</a><a class="btn btn-light" href="https://wa.me/917223981175" target="_blank" rel="noopener">WhatsApp Enquiry ↗</a></div>
 </div></section>
 <section class="content"><div class="wrap"><div class="section-label reveal">Your direct connection</div><h2 class="reveal">Transport enquiries, made simple.</h2><p class="section-intro reveal">Connect directly for information and coordination. Save this digital visiting card and share it with your customers and business contacts.</p><div class="cards"><article class="card reveal"><div class="card-icon">☎</div><h3>Direct Contact</h3><p>Speak directly with Ajay Arora for transport enquiries.</p></article><article class="card reveal"><div class="card-icon">◉</div><h3>WhatsApp Connect</h3><p>Send a message for direct communication and follow-up.</p></article><article class="card reveal"><div class="card-icon">⌖</div><h3>Find Our Location</h3><p>Open the Vidisha location on Google Maps and get directions.</p></article></div></div></section>
